@@ -1,0 +1,37 @@
+﻿<Window x:Class="Banauto.Frontend.UserSelectAuto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banauto.Frontend"
+        mc:Ignorable="d"
+        Title="UserSelectAuto" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" Closing="Window_Closing" Closed="Window_Closed">
+    <Grid>
+        <Button x:Name="btnCancel" Content="Atšaukti" HorizontalAlignment="Left" Margin="270,374,0,0" VerticalAlignment="Top" Width="191" Height="35" Click="btnCancel_Click"/>
+        <Button x:Name="btnOrder" Content="Užsakyti" HorizontalAlignment="Left" Margin="45,374,0,0" VerticalAlignment="Top" Width="179" Height="35" Click="btnOrder_Click"/>
+        <Grid x:Name="adminGrid" Visibility="Collapsed" HorizontalAlignment="Left" Height="408" Margin="10,1,0,0" VerticalAlignment="Top" Width="451" Background="#FFA2A2A2">
+            <Button x:Name="btnSaveChanges" Content="Išsaugoti pakeitimus" HorizontalAlignment="Left" Margin="153,374,0,0" VerticalAlignment="Top" Width="158" Click="btnSaveChanges_Click"/>
+            <Button x:Name="btnDeleteAuto" Content="TRINTI AUTOMOBILĮ" HorizontalAlignment="Left" Margin="337,10,0,0" VerticalAlignment="Top" Width="104" FontSize="10" Background="Red" Height="18" Click="btnDeleteAuto_Click_1"/>
+        </Grid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="163" Margin="19,33,0,0" Stroke="Black" VerticalAlignment="Top" Width="246"/>
+        <Label Content="Aprašas:" HorizontalAlignment="Left" Margin="19,201,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.012,0.757"/>
+        <TextBox x:Name="txtBlockDescription" HorizontalAlignment="Left" Height="125" Margin="19,238,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="442" FontSize="20"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="349" Margin="474,60,0,0" VerticalAlignment="Top" Width="300">
+            <StackPanel x:Name="stackPanel" Background="#FF3DD9FB"/>
+        </ScrollViewer>
+        <Label Content="Nuotraukos:" HorizontalAlignment="Left" Margin="474,18,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Markė:" HorizontalAlignment="Left" Margin="67,33,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Modelis:" HorizontalAlignment="Left" Margin="53,75,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Spalva:" HorizontalAlignment="Left" Margin="66,117,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Galia (KW):" HorizontalAlignment="Left" Margin="31,159,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Specifikacijos:" HorizontalAlignment="Left" Margin="19,2,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Kaina(€):" HorizontalAlignment="Left" Margin="235,196,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="lblMake" HorizontalAlignment="Left" Height="23" Margin="142,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lblModel" HorizontalAlignment="Left" Height="23" Margin="142,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lblColour" HorizontalAlignment="Left" Height="23" Margin="142,130,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lblKw" HorizontalAlignment="Left" Height="23" Margin="142,168,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="lblPrice" HorizontalAlignment="Left" Height="23" Margin="325,209,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

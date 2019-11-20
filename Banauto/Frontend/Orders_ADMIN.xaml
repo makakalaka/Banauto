@@ -1,0 +1,20 @@
+﻿<Window x:Class="Banauto.Frontend.Orders_ADMIN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banauto.Frontend"
+        mc:Ignorable="d"
+        Title="UŽSAKYMAI" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer HorizontalAlignment="Left" Height="329" Margin="10,49,0,0" VerticalAlignment="Top" Width="772">
+            <StackPanel x:Name="stackPanel"  Background="#FFD6D6D6" />
+        </ScrollViewer>
+        <Label Content="* Užsakymo būsena keičiama paspaudus ant užsakymo (Žalias - atliktas, Raudonas - laukiama)" HorizontalAlignment="Left" Margin="10,383,0,0" VerticalAlignment="Top"/>
+        <Label Content="Užsakymo ID" HorizontalAlignment="Left" Margin="17,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Auto ID" HorizontalAlignment="Left" Margin="164,18,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.212,0.64"/>
+        <Label Content="Vardas" HorizontalAlignment="Left" Margin="306,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pavardė" HorizontalAlignment="Left" Margin="442,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefono nr." HorizontalAlignment="Left" Margin="590,18,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

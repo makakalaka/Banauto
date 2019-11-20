@@ -1,0 +1,21 @@
+﻿<Window x:Class="Banauto.Frontend.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banauto.Frontend"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="btnLogin" Content="Prisijungti" HorizontalAlignment="Left" Margin="341,231,0,0" VerticalAlignment="Top" Width="124" FontSize="18" Click="btnLogin_Click"/>
+        <Button x:Name="btnCancel" Content="Atšaukti" HorizontalAlignment="Left" Margin="495,231,0,0" VerticalAlignment="Top" Width="121" FontSize="18" Click="btnCancel_Click"/>
+        <Button x:Name="btnRegister" Content="čia." HorizontalAlignment="Left" Margin="538,389,0,0" VerticalAlignment="Top" Width="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF008BFF" FontWeight="Bold" Click="btnRegister_Click"/>
+        <Label Content="Nesate prisiregistravę? Tai galite padaryti paspaudus" HorizontalAlignment="Left" Margin="252,386,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="40" Margin="341,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" FontSize="24"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="341,174,0,0" VerticalAlignment="Top" RenderTransformOrigin="-7.167,-1.028" Height="40" Width="275"/>
+        <Label Content="Prisijungimo vardas:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="7.421,6.115" Margin="114,125,0,0" FontSize="24"/>
+        <Label Content="Slaptažodis:" HorizontalAlignment="Left" Margin="201,172,0,0" VerticalAlignment="Top" FontSize="24"/>
+
+    </Grid>
+</Window>

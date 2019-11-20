@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Banauto.Frontend.UC_Autos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Banauto.Frontend"
+             mc:Ignorable="d" d:DesignWidth="600" Height="334.884">
+    <Grid Background="#FF3DD9FB" Margin="10">
+        <Label x:Name="lblAutoMake_Model" Content="AutoMake+Model" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Image x:Name="imgAuto" HorizontalAlignment="Left" Height="260" Margin="10,45,0,0" VerticalAlignment="Top" Width="560"/>
+        <Button x:Name="btnSelect"  Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="580" Height="315" Background="{x:Null}" Opacity="0.2" Click="btnSelect_Click"/>
+        <Label x:Name="lblVehicleID" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="513,10,0,0" FontSize="20"/>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="479,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+    </Grid>
+</UserControl>
